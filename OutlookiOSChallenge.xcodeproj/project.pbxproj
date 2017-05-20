@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E3FB6E81E921E9E0066D46F /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3FB6E71E921E9E0066D46F /* WeatherModel.swift */; };
+		3E6710C91E922F4D00B81B6D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6710C81E922F4D00B81B6D /* CoreLocation.framework */; };
+		3E7012BC1E924326005E0EE4 /* AgendaHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7012BB1E924326005E0EE4 /* AgendaHeader.swift */; };
+		3E7012BE1E924356005E0EE4 /* AgendaHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012BD1E924356005E0EE4 /* AgendaHeader.xib */; };
+		3E7012BF1E926370005E0EE4 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D021E90DA450036CE16 /* DateModel.swift */; };
+		3E7012C01E926373005E0EE4 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D031E90DA450036CE16 /* EventModel.swift */; };
+		3E7012C11E926375005E0EE4 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3FB6E71E921E9E0066D46F /* WeatherModel.swift */; };
+		3E7012C31E92660B005E0EE4 /* DateModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7012C21E92660B005E0EE4 /* DateModelTests.swift */; };
+		3E7012C51E92CCEA005E0EE4 /* WeatherModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7012C41E92CCEA005E0EE4 /* WeatherModelTests.swift */; };
+		3E7012C71E92CF5E005E0EE4 /* normal.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012C61E92CF5E005E0EE4 /* normal.json */; };
+		3E7012C91E92D5C8005E0EE4 /* noTimestamp.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012C81E92D5C8005E0EE4 /* noTimestamp.json */; };
+		3E7012CB1E92D5CF005E0EE4 /* noIcon.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012CA1E92D5CF005E0EE4 /* noIcon.json */; };
+		3E7012CD1E92D5D4005E0EE4 /* noData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012CC1E92D5D4005E0EE4 /* noData.json */; };
+		3E7012CF1E92D5D9005E0EE4 /* noDaily.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012CE1E92D5D9005E0EE4 /* noDaily.json */; };
+		3E7012D11E92D5F3005E0EE4 /* noTemperature.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7012D01E92D5F3005E0EE4 /* noTemperature.json */; };
+		3ED83CCE1E90C0BA0036CE16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CCD1E90C0BA0036CE16 /* AppDelegate.swift */; };
+		3ED83CD31E90C0BB0036CE16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83CD11E90C0BB0036CE16 /* Main.storyboard */; };
+		3ED83CD51E90C0BB0036CE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83CD41E90C0BB0036CE16 /* Assets.xcassets */; };
+		3ED83CD81E90C0BB0036CE16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83CD61E90C0BB0036CE16 /* LaunchScreen.storyboard */; };
+		3ED83CE31E90C0BB0036CE16 /* OutlookiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CE21E90C0BB0036CE16 /* OutlookiOSChallengeTests.swift */; };
+		3ED83CF11E90C36F0036CE16 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CF01E90C36F0036CE16 /* CalendarViewController.swift */; };
+		3ED83CF31E90C39A0036CE16 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CF21E90C39A0036CE16 /* ProfileViewController.swift */; };
+		3ED83CFA1E90C64D0036CE16 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CF81E90C64D0036CE16 /* DayCell.swift */; };
+		3ED83CFB1E90C64D0036CE16 /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83CF91E90C64D0036CE16 /* DayCell.xib */; };
+		3ED83CFE1E90CEEB0036CE16 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83CFC1E90CEEB0036CE16 /* AgendaCell.swift */; };
+		3ED83CFF1E90CEEB0036CE16 /* AgendaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83CFD1E90CEEB0036CE16 /* AgendaCell.xib */; };
+		3ED83D041E90DA450036CE16 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D021E90DA450036CE16 /* DateModel.swift */; };
+		3ED83D051E90DA450036CE16 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D031E90DA450036CE16 /* EventModel.swift */; };
+		3ED83D081E9108F60036CE16 /* EmptyAgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D061E9108F60036CE16 /* EmptyAgendaCell.swift */; };
+		3ED83D091E9108F60036CE16 /* EmptyAgendaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED83D071E9108F60036CE16 /* EmptyAgendaCell.xib */; };
+		3ED83D0C1E9140290036CE16 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED83D0B1E9140290036CE16 /* UIColorExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ED83CDF1E90C0BB0036CE16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ED83CC21E90C0BA0036CE16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ED83CC91E90C0BA0036CE16;
+			remoteInfo = OutlookiOSChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E3FB6E71E921E9E0066D46F /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		3E6710C81E922F4D00B81B6D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3E7012BB1E924326005E0EE4 /* AgendaHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaHeader.swift; sourceTree = "<group>"; };
+		3E7012BD1E924356005E0EE4 /* AgendaHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaHeader.xib; sourceTree = "<group>"; };
+		3E7012C21E92660B005E0EE4 /* DateModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateModelTests.swift; sourceTree = "<group>"; };
+		3E7012C41E92CCEA005E0EE4 /* WeatherModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModelTests.swift; sourceTree = "<group>"; };
+		3E7012C61E92CF5E005E0EE4 /* normal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = normal.json; sourceTree = "<group>"; };
+		3E7012C81E92D5C8005E0EE4 /* noTimestamp.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noTimestamp.json; sourceTree = "<group>"; };
+		3E7012CA1E92D5CF005E0EE4 /* noIcon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noIcon.json; sourceTree = "<group>"; };
+		3E7012CC1E92D5D4005E0EE4 /* noData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noData.json; sourceTree = "<group>"; };
+		3E7012CE1E92D5D9005E0EE4 /* noDaily.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noDaily.json; sourceTree = "<group>"; };
+		3E7012D01E92D5F3005E0EE4 /* noTemperature.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = noTemperature.json; sourceTree = "<group>"; };
+		3ED83CCA1E90C0BA0036CE16 /* OutlookiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutlookiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED83CCD1E90C0BA0036CE16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3ED83CD21E90C0BB0036CE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ED83CD41E90C0BB0036CE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3ED83CD71E90C0BB0036CE16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3ED83CD91E90C0BB0036CE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED83CDE1E90C0BB0036CE16 /* OutlookiOSChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutlookiOSChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ED83CE21E90C0BB0036CE16 /* OutlookiOSChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlookiOSChallengeTests.swift; sourceTree = "<group>"; };
+		3ED83CE41E90C0BB0036CE16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED83CF01E90C36F0036CE16 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		3ED83CF21E90C39A0036CE16 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3ED83CF81E90C64D0036CE16 /* DayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		3ED83CF91E90C64D0036CE16 /* DayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
+		3ED83CFC1E90CEEB0036CE16 /* AgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
+		3ED83CFD1E90CEEB0036CE16 /* AgendaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AgendaCell.xib; sourceTree = "<group>"; };
+		3ED83D021E90DA450036CE16 /* DateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
+		3ED83D031E90DA450036CE16 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		3ED83D061E9108F60036CE16 /* EmptyAgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyAgendaCell.swift; sourceTree = "<group>"; };
+		3ED83D071E9108F60036CE16 /* EmptyAgendaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyAgendaCell.xib; sourceTree = "<group>"; };
+		3ED83D0B1E9140290036CE16 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ED83CC71E90C0BA0036CE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6710C91E922F4D00B81B6D /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED83CDB1E90C0BB0036CE16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E6710C71E922F4D00B81B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E6710C81E922F4D00B81B6D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3ED83CC11E90C0BA0036CE16 = {
+			isa = PBXGroup;
+			children = (
+				3ED83CCC1E90C0BA0036CE16 /* OutlookiOSChallenge */,
+				3ED83CE11E90C0BB0036CE16 /* OutlookiOSChallengeTests */,
+				3ED83CCB1E90C0BA0036CE16 /* Products */,
+				3E6710C71E922F4D00B81B6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3ED83CCB1E90C0BA0036CE16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83CCA1E90C0BA0036CE16 /* OutlookiOSChallenge.app */,
+				3ED83CDE1E90C0BB0036CE16 /* OutlookiOSChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ED83CCC1E90C0BA0036CE16 /* OutlookiOSChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83D0A1E913F890036CE16 /* Utilities */,
+				3ED83CF71E90C60C0036CE16 /* Views */,
+				3ED83CF41E90C3C50036CE16 /* Models */,
+				3ED83CEF1E90C2E60036CE16 /* ViewControllers */,
+				3ED83CCD1E90C0BA0036CE16 /* AppDelegate.swift */,
+				3ED83CD11E90C0BB0036CE16 /* Main.storyboard */,
+				3ED83CD41E90C0BB0036CE16 /* Assets.xcassets */,
+				3ED83CD61E90C0BB0036CE16 /* LaunchScreen.storyboard */,
+				3ED83CD91E90C0BB0036CE16 /* Info.plist */,
+			);
+			path = OutlookiOSChallenge;
+			sourceTree = "<group>";
+		};
+		3ED83CE11E90C0BB0036CE16 /* OutlookiOSChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83CE21E90C0BB0036CE16 /* OutlookiOSChallengeTests.swift */,
+				3ED83CE41E90C0BB0036CE16 /* Info.plist */,
+				3E7012C21E92660B005E0EE4 /* DateModelTests.swift */,
+				3E7012C41E92CCEA005E0EE4 /* WeatherModelTests.swift */,
+				3E7012C61E92CF5E005E0EE4 /* normal.json */,
+				3E7012C81E92D5C8005E0EE4 /* noTimestamp.json */,
+				3E7012CA1E92D5CF005E0EE4 /* noIcon.json */,
+				3E7012D01E92D5F3005E0EE4 /* noTemperature.json */,
+				3E7012CC1E92D5D4005E0EE4 /* noData.json */,
+				3E7012CE1E92D5D9005E0EE4 /* noDaily.json */,
+			);
+			path = OutlookiOSChallengeTests;
+			sourceTree = "<group>";
+		};
+		3ED83CEF1E90C2E60036CE16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83CF01E90C36F0036CE16 /* CalendarViewController.swift */,
+				3ED83CF21E90C39A0036CE16 /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3ED83CF41E90C3C50036CE16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83D021E90DA450036CE16 /* DateModel.swift */,
+				3ED83D031E90DA450036CE16 /* EventModel.swift */,
+				3E3FB6E71E921E9E0066D46F /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3ED83CF71E90C60C0036CE16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83CF81E90C64D0036CE16 /* DayCell.swift */,
+				3ED83CF91E90C64D0036CE16 /* DayCell.xib */,
+				3ED83CFC1E90CEEB0036CE16 /* AgendaCell.swift */,
+				3ED83CFD1E90CEEB0036CE16 /* AgendaCell.xib */,
+				3ED83D061E9108F60036CE16 /* EmptyAgendaCell.swift */,
+				3ED83D071E9108F60036CE16 /* EmptyAgendaCell.xib */,
+				3E7012BB1E924326005E0EE4 /* AgendaHeader.swift */,
+				3E7012BD1E924356005E0EE4 /* AgendaHeader.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3ED83D0A1E913F890036CE16 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3ED83D0B1E9140290036CE16 /* UIColorExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ED83CC91E90C0BA0036CE16 /* OutlookiOSChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED83CE71E90C0BB0036CE16 /* Build configuration list for PBXNativeTarget "OutlookiOSChallenge" */;
+			buildPhases = (
+				3ED83CC61E90C0BA0036CE16 /* Sources */,
+				3ED83CC71E90C0BA0036CE16 /* Frameworks */,
+				3ED83CC81E90C0BA0036CE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutlookiOSChallenge;
+			productName = OutlookiOSChallenge;
+			productReference = 3ED83CCA1E90C0BA0036CE16 /* OutlookiOSChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ED83CDD1E90C0BB0036CE16 /* OutlookiOSChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED83CEA1E90C0BB0036CE16 /* Build configuration list for PBXNativeTarget "OutlookiOSChallengeTests" */;
+			buildPhases = (
+				3ED83CDA1E90C0BB0036CE16 /* Sources */,
+				3ED83CDB1E90C0BB0036CE16 /* Frameworks */,
+				3ED83CDC1E90C0BB0036CE16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ED83CE01E90C0BB0036CE16 /* PBXTargetDependency */,
+			);
+			name = OutlookiOSChallengeTests;
+			productName = OutlookiOSChallengeTests;
+			productReference = 3ED83CDE1E90C0BB0036CE16 /* OutlookiOSChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ED83CC21E90C0BA0036CE16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = me.calvinchankf;
+				TargetAttributes = {
+					3ED83CC91E90C0BA0036CE16 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Z748RTCFAJ;
+						ProvisioningStyle = Automatic;
+					};
+					3ED83CDD1E90C0BB0036CE16 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Z748RTCFAJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3ED83CC91E90C0BA0036CE16;
+					};
+				};
+			};
+			buildConfigurationList = 3ED83CC51E90C0BA0036CE16 /* Build configuration list for PBXProject "OutlookiOSChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ED83CC11E90C0BA0036CE16;
+			productRefGroup = 3ED83CCB1E90C0BA0036CE16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ED83CC91E90C0BA0036CE16 /* OutlookiOSChallenge */,
+				3ED83CDD1E90C0BB0036CE16 /* OutlookiOSChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ED83CC81E90C0BA0036CE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED83CD81E90C0BB0036CE16 /* LaunchScreen.storyboard in Resources */,
+				3ED83CD51E90C0BB0036CE16 /* Assets.xcassets in Resources */,
+				3ED83CFB1E90C64D0036CE16 /* DayCell.xib in Resources */,
+				3E7012BE1E924356005E0EE4 /* AgendaHeader.xib in Resources */,
+				3ED83D091E9108F60036CE16 /* EmptyAgendaCell.xib in Resources */,
+				3ED83CD31E90C0BB0036CE16 /* Main.storyboard in Resources */,
+				3ED83CFF1E90CEEB0036CE16 /* AgendaCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED83CDC1E90C0BB0036CE16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7012CB1E92D5CF005E0EE4 /* noIcon.json in Resources */,
+				3E7012C71E92CF5E005E0EE4 /* normal.json in Resources */,
+				3E7012CF1E92D5D9005E0EE4 /* noDaily.json in Resources */,
+				3E7012D11E92D5F3005E0EE4 /* noTemperature.json in Resources */,
+				3E7012CD1E92D5D4005E0EE4 /* noData.json in Resources */,
+				3E7012C91E92D5C8005E0EE4 /* noTimestamp.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ED83CC61E90C0BA0036CE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED83CF11E90C36F0036CE16 /* CalendarViewController.swift in Sources */,
+				3ED83CFA1E90C64D0036CE16 /* DayCell.swift in Sources */,
+				3ED83CF31E90C39A0036CE16 /* ProfileViewController.swift in Sources */,
+				3ED83CCE1E90C0BA0036CE16 /* AppDelegate.swift in Sources */,
+				3E7012BC1E924326005E0EE4 /* AgendaHeader.swift in Sources */,
+				3E3FB6E81E921E9E0066D46F /* WeatherModel.swift in Sources */,
+				3ED83D051E90DA450036CE16 /* EventModel.swift in Sources */,
+				3ED83D0C1E9140290036CE16 /* UIColorExtension.swift in Sources */,
+				3ED83CFE1E90CEEB0036CE16 /* AgendaCell.swift in Sources */,
+				3ED83D041E90DA450036CE16 /* DateModel.swift in Sources */,
+				3ED83D081E9108F60036CE16 /* EmptyAgendaCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED83CDA1E90C0BB0036CE16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E7012C31E92660B005E0EE4 /* DateModelTests.swift in Sources */,
+				3ED83CE31E90C0BB0036CE16 /* OutlookiOSChallengeTests.swift in Sources */,
+				3E7012C51E92CCEA005E0EE4 /* WeatherModelTests.swift in Sources */,
+				3E7012C01E926373005E0EE4 /* EventModel.swift in Sources */,
+				3E7012C11E926375005E0EE4 /* WeatherModel.swift in Sources */,
+				3E7012BF1E926370005E0EE4 /* DateModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ED83CE01E90C0BB0036CE16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ED83CC91E90C0BA0036CE16 /* OutlookiOSChallenge */;
+			targetProxy = 3ED83CDF1E90C0BB0036CE16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3ED83CD11E90C0BB0036CE16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED83CD21E90C0BB0036CE16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ED83CD61E90C0BB0036CE16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ED83CD71E90C0BB0036CE16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ED83CE51E90C0BB0036CE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3ED83CE61E90C0BB0036CE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ED83CE81E90C0BB0036CE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				INFOPLIST_FILE = OutlookiOSChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.OutlookiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3ED83CE91E90C0BB0036CE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				INFOPLIST_FILE = OutlookiOSChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.OutlookiOSChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3ED83CEB1E90C0BB0036CE16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				INFOPLIST_FILE = OutlookiOSChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.OutlookiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutlookiOSChallenge.app/OutlookiOSChallenge";
+			};
+			name = Debug;
+		};
+		3ED83CEC1E90C0BB0036CE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				INFOPLIST_FILE = OutlookiOSChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.OutlookiOSChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutlookiOSChallenge.app/OutlookiOSChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ED83CC51E90C0BA0036CE16 /* Build configuration list for PBXProject "OutlookiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED83CE51E90C0BB0036CE16 /* Debug */,
+				3ED83CE61E90C0BB0036CE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED83CE71E90C0BB0036CE16 /* Build configuration list for PBXNativeTarget "OutlookiOSChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED83CE81E90C0BB0036CE16 /* Debug */,
+				3ED83CE91E90C0BB0036CE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED83CEA1E90C0BB0036CE16 /* Build configuration list for PBXNativeTarget "OutlookiOSChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ED83CEB1E90C0BB0036CE16 /* Debug */,
+				3ED83CEC1E90C0BB0036CE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ED83CC21E90C0BA0036CE16 /* Project object */;
+}

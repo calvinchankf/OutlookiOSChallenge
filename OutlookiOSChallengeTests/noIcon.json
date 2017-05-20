@@ -1,0 +1,23 @@
+{
+    "latitude": 22.3235719,
+    "longitude": 114.1630773,
+    "timezone": "Asia/Hong_Kong",
+    "offset": 8,
+    "daily": {
+        "summary": "Light rain on Tuesday, with temperatures rising to 85°F on Friday.",
+        "icon": "rain",
+        "data": [{
+            "time": 0,
+            "temperatureMin": 1,
+            "temperatureMax": 3,
+        }, {
+            "time": 1,
+            "temperatureMin": 2,
+            "temperatureMax": 4,
+        }, {
+            "time": 2,
+            "temperatureMin": 3,
+            "temperatureMax": 5,
+        }]
+    }
+}

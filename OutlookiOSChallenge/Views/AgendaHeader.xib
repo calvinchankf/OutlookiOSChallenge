@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AgendaHeader" customModule="OutlookiOSChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuX-Ro-BzM">
+                    <rect key="frame" x="8" y="0.0" width="31" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="dFV-xN-1Hg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-ao-StE">
+                    <rect key="frame" x="336" y="0.0" width="31" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="koG-2l-WmG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gf5-ao-StE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GtW-0X-wfg"/>
+                <constraint firstAttribute="bottom" secondItem="gf5-ao-StE" secondAttribute="bottom" id="Jb6-Va-gWc"/>
+                <constraint firstAttribute="trailing" secondItem="gf5-ao-StE" secondAttribute="trailing" constant="8" id="KWW-i4-LkC"/>
+                <constraint firstItem="tuX-Ro-BzM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Tfi-Xj-vS2"/>
+                <constraint firstAttribute="bottom" secondItem="tuX-Ro-BzM" secondAttribute="bottom" id="jqZ-RP-oOd"/>
+                <constraint firstItem="tuX-Ro-BzM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zDF-Q6-0IN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="tuX-Ro-BzM" id="0u0-sg-AIT"/>
+                <outlet property="weatherLabel" destination="gf5-ao-StE" id="SyK-Gd-XxT"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="55"/>
+        </view>
+    </objects>
+</document>

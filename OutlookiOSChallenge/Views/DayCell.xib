@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DayCell" customModule="OutlookiOSChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8q-en-5RI">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthday" translatesAutoresizingMaskIntoConstraints="NO" id="bZZ-Op-Zfc">
+                        <rect key="frame" x="5" y="2" width="40" height="39"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apr 2 2017" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="DDy-Wa-EnU">
+                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOy-U6-mZ6">
+                        <rect key="frame" x="37" y="36" width="11" height="12"/>
+                        <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-RJ-ghW">
+                        <rect key="frame" x="0.0" y="49" width="50" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="M7b-Oy-aw8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bZZ-Op-Zfc" secondAttribute="trailing" constant="5" id="0TJ-Hx-3yV"/>
+                <constraint firstItem="s8q-en-5RI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="4u6-Sh-SFB"/>
+                <constraint firstAttribute="trailing" secondItem="DDy-Wa-EnU" secondAttribute="trailing" constant="10" id="621-RP-JLf"/>
+                <constraint firstAttribute="trailing" secondItem="s8q-en-5RI" secondAttribute="trailing" constant="5" id="8zD-vI-G8W"/>
+                <constraint firstItem="DDy-Wa-EnU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Hlz-IT-UYQ"/>
+                <constraint firstItem="WTv-RJ-ghW" firstAttribute="top" secondItem="bZZ-Op-Zfc" secondAttribute="bottom" constant="8" id="II1-gx-v8h"/>
+                <constraint firstAttribute="trailing" secondItem="xOy-U6-mZ6" secondAttribute="trailing" constant="2" id="LZu-NT-oED"/>
+                <constraint firstAttribute="bottom" secondItem="xOy-U6-mZ6" secondAttribute="bottom" constant="2" id="OXK-PP-U7F"/>
+                <constraint firstAttribute="trailing" secondItem="WTv-RJ-ghW" secondAttribute="trailing" id="VEh-1S-eqX"/>
+                <constraint firstAttribute="bottom" secondItem="s8q-en-5RI" secondAttribute="bottom" constant="5" id="VqD-2e-0El"/>
+                <constraint firstAttribute="bottom" secondItem="DDy-Wa-EnU" secondAttribute="bottom" constant="10" id="gIx-zJ-zb2"/>
+                <constraint firstItem="s8q-en-5RI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="kry-gm-PT1"/>
+                <constraint firstItem="bZZ-Op-Zfc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="pOa-4F-CrT"/>
+                <constraint firstItem="WTv-RJ-ghW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pve-vr-PZJ"/>
+                <constraint firstItem="bZZ-Op-Zfc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="srb-Bq-yv8"/>
+                <constraint firstItem="DDy-Wa-EnU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ygr-4y-ElC"/>
+                <constraint firstAttribute="bottom" secondItem="WTv-RJ-ghW" secondAttribute="bottom" id="z7i-YT-Cxr"/>
+            </constraints>
+            <connections>
+                <outlet property="birthdayCakeImageView" destination="bZZ-Op-Zfc" id="fyk-VF-JEh"/>
+                <outlet property="dayLabel" destination="DDy-Wa-EnU" id="k8O-34-GaV"/>
+                <outlet property="focusedBackgroundView" destination="s8q-en-5RI" id="gkc-W1-MUE"/>
+                <outlet property="numberOfEventsLabel" destination="xOy-U6-mZ6" id="BFD-OB-vPc"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="birthday" width="20" height="23"/>
+    </resources>
+</document>
