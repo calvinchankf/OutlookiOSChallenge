@@ -1,8 +1,5 @@
 #### Outlook iOS Challenge
 
-Candidate: Kin Fung Chan(Calvin)  
-Phone No.: +85261126075
-
 This Project is to replicate the basic features described below of the Calendar and Agenda views on the Outlook iOS (iPhone) app.
 
 #### Approach
